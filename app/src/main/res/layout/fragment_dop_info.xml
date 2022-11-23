@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentDopInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_rod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:text="@string/info_rod" />
+
+            <TextView
+                android:id="@+id/fio_rod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/fio" />
+
+            <EditText
+                android:id="@+id/edFio_rod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:hint="@string/v_text"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tel_rod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="@string/telefon" />
+
+                <EditText
+                    android:id="@+id/edtel_rod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:hint="@string/v_text"/>
+
+            </LinearLayout>
+
+            <TextView
+            android:id="@+id/pasp_dan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorFon"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="PasportDann"
+            android:text="@string/pasport_dann" />
+
+            <fragment
+                android:id="@+id/PasportDann"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.example.mydormitory.fragments.BlankFragment"/>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seriya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/seriya" />
+
+            <EditText
+                android:id="@+id/edSeriya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:hint="@string/v_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/nomer" />
+
+            <EditText
+                android:id="@+id/edNomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:hint="@string/v_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kem_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="@string/kem_v" />
+
+        <EditText
+            android:id="@+id/edKem_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/v_text"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/data_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/data_v" />
+
+            <EditText
+                android:id="@+id/edData_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:hint="@string/v_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="start"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="@string/pol" />
+
+            <CheckBox
+                android:id="@+id/checkBoxG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/G" />
+
+            <CheckBox
+                android:id="@+id/checkBoxM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/M" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/data_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/data_v" />
+
+            <EditText
+                android:id="@+id/edData_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:hint="@string/v_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mesto_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/mesto_r" />
+
+            <EditText
+                android:id="@+id/edMesto_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:hint="@string/v_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mesto_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:text="@string/mesto_g" />
+
+        <EditText
+            android:id="@+id/edMesto_g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/v_text"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

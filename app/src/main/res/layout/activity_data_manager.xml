@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DataManager">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/data_manager"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/save_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/btn_save_bd"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorFon"
+                android:onClick="saveBD"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/load_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/btn_load_bd"
+                android:textColor="@color/white"
+                android:onClick="loadBD"
+                android:backgroundTint="@color/colorFon"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/del_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:onClick="delAll"
+                android:text="@string/btn_del_bd"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorFon"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textErrorRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:onClick="errorBtn"
+                android:text="@string/errorRooms" />
+
+            <TextView
+                android:id="@+id/info_bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ifo_bd" />
+
+            <TextView
+                android:id="@+id/info_bd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ifo_bd" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

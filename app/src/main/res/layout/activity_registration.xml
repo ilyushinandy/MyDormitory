@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/registration" />
+
+            <EditText
+                android:id="@+id/editId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/id"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/editRegPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:gravity="center"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/button_save"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:fontFamily="@font/montserrat"
+                   android:textColor="@color/white"
+                   android:textSize="15sp"
+                   android:backgroundTint="@color/colorFon"
+                   android:text="@string/btn_save" />
+
+               <Button
+                   android:id="@+id/button_read"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat"
+                   android:textColor="@color/white"
+                   android:textSize="15sp"
+                   android:backgroundTint="@color/colorFon"
+                   android:text="@string/btn_read" />
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/btn_del"
+                    android:backgroundTint="@color/colorFon"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/button_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/btn_edit"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/colorFon"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:longClickable="false"
+                android:minHeight="48dp"
+                android:text="@string/Users"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
