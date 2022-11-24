@@ -1,9 +1,9 @@
 # MyDormitory
 Моя выпускная квалификационная работа, конечно, приложение требует доработки и рефакторинга, но я хочу переписать его на Xamarin чтобы сделать кроссплатформенным.
 
-<span display="inline">
+<span display="inline" float="left">
 <h1 align="left"><img src="https://user-images.githubusercontent.com/97675571/203785145-b80962ef-7322-41bf-a2a6-b6daa1e4354d.png" height="300"/></h1>
-<h1 align="left"><img src"https://user-images.githubusercontent.com/97675571/203785142-49f66ba7-f649-4778-8e67-61755c857d74.png" height="300"/></h1>
+<h1 align="left"><img src="https://user-images.githubusercontent.com/97675571/203785142-49f66ba7-f649-4778-8e67-61755c857d74.png" height="300"/></h1>
 <h1 align="left"><img src="https://user-images.githubusercontent.com/97675571/203785148-23a3b60c-8122-448a-80e6-a020ed63c952.png" height="300"/></h1>
 </span>
 <h1 align="left"><img src="https://user-images.githubusercontent.com/97675571/203785150-71f0d584-cf59-4192-bc2f-c1701e04e201.png" height="300"/></h1>
