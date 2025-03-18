@@ -1,6 +1,9 @@
 # MyDormitory
 Моя выпускная квалификационная работа, конечно, приложение требует доработки и рефакторинга, но я хочу переписать его на Xamarin чтобы сделать кроссплатформенным.
-
+В приложение реализован учет студентов в общежитии, реализовано: парсинг Excel-файла для заполнения базы данных, сохранение бд в Excel-файл, авторизация с помощью логина и пароля.
+!!!
+Проет переписан под кроссплатформенную технологию на платформе .NET MAUI - https://github.com/ilyushinandy/DormitoryCross
+!!!
 <span display="inline">
   <img src="https://user-images.githubusercontent.com/97675571/203785169-39cfdd80-3173-4921-8916-5de5a3d4ae3c.jpg" height="300" padding="10"/>
   <img src="https://user-images.githubusercontent.com/97675571/203785153-9d39f181-9a45-409b-8912-54816cb2935d.jpg" height="300" padding="10"/>
